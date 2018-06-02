@@ -14,3 +14,33 @@ html {
   #pokemon-name, #pokemon-description, #pokemon-sprite {
     background-color: #ffff66;
   }
+
+
+
+  .titlebar{
+    display: flex;
+    padding: 5%;
+    height: 30px;
+    width: 100%;
+    -webkit-app-region:drag;
+  }
+  
+  .label {
+    margin-right: auto;
+    font-size: 25px;
+    font-size: bold;
+  }
+  .controls{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .controls button {
+    width: 45px;
+    height: 45px;
+    margin-left: 1em;
+  }
+
+  header {
+    display: flex;
+  }
