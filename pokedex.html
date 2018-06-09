@@ -12,38 +12,38 @@
         <header>
         <div class="titlebar">
                 <span class="label" >
-                        Pokedex
+                        Pokédex
                 </span>
             <div class="controls">
                     <button id = "maximize">+</button>
                     <button id = "minimize">-</button>
                     <button id = "close">x</button>
             </div>
-            
         </div>
         </header>
-        <main>
+            <div id="search-stuff">
             <form id="search">
-    <input id="search-query" type="search">
-    <button>🔍</button>
     <select id="search-language">
-        <option value="en">English</option>
-        <option value="ja"selected>Japanese</option>
+        <option value="en"selected>English</option>
+        <option value="ja">Japanese</option>
         <option value="roomaji">Roomaji</option>
     </select>
+    <input id="search-query" type="search" placeholder="Search Pokémon">
+    <button>🔍</button>
     </form>
-
-    <h1 id="pokemon-name">
-
-    </h1>
-    <center>
-    <img id="pokemon-sprite"/>
-    </center>
-    <p id="pokemon-description">
-
-    </p>
-            <script src="pokedex.js"></script>
+</div>
+    <div id="image-half">
+            <img id="pokemon-sprite"/>
     </div>
-</main>
-        </body>
-    </html>
+
+    <div id="info-half">
+            <h1 id="pokemon-name"></h1>
+
+            <p id="pokemon-description"> </p>
+    </div>
+    
+    
+    
+    <script src="pokedex.js"></script>
+    </body>
+</html>

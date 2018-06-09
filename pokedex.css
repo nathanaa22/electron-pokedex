@@ -1,7 +1,9 @@
 html {
-    background-color: yellow;
+    background-color: white;
   }
-  
+  body {
+    margin: 0;
+  }
   #pokemon-name {
      padding: 1%;
      text-align: center;
@@ -10,25 +12,33 @@ html {
   #pokemon-description {
     text-align: center;
   }
-  
-  #pokemon-name, #pokemon-description, #pokemon-sprite {
-    background-color: #ffff66;
+
+  #search-query{
+    width: 90%;
   }
 
+  #search {
+    background-color: #ed970e;
+  }
 
-
+  #search-stuff {
+    display: flex;
+    flex-direction: column;
+  }
   .titlebar{
     display: flex;
-    padding: 5%;
+    align-items: center;
     height: 30px;
     width: 100%;
     -webkit-app-region:drag;
+    background-color: #ed970e;
   }
   
   .label {
     margin-right: auto;
-    font-size: 25px;
-    font-size: bold;
+    font-size: 14px;
+    color: #ead4af;
+    margin-left: 45%;
   }
   .controls{
     display: flex;
@@ -37,10 +47,44 @@ html {
 
   .controls button {
     width: 45px;
-    height: 45px;
-    margin-left: 1em;
+    background-color: #ed970e;
+    border: 0px;
+    color: #ead4af;
+  }
+
+  .controls button:hover {
+    background-color: #ead4af;
+    color: #ed970e;
   }
 
   header {
     display: flex;
+  }
+
+  #image-half {
+    width: 50%;
+  }
+  #pokemon-sprite {
+    width: 40%;
+    height: 40%;
+    margin-left: 20%;
+    margin-top: 40%;
+  }
+  #info-half {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  #pokemon-description {
+    width: 50%;
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  #pokemon-name {
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
   }

@@ -7,7 +7,7 @@ let searchForm         = document.getElementById("search")
 let searchQuery        = document.getElementById("search-query")
 let searchLanguage     = document.getElementById("search-language")
 let maximizeButton     = document.getElementById("maximize")
-let minimizeButto      = document.getElementById("minimize")
+let minimizeButton     = document.getElementById("minimize")
 let closeButton        = document.getElementById("close")
 
 
@@ -52,4 +52,14 @@ searchForm.addEventListener("submit", event => {
 closeButton.addEventListener("click", function(event){
 	event.preventDefault()
 	remote.getCurrentWindow().close()
+})
+
+minimizeButton.addEventListener("click", function(event){
+	event.preventDefault()
+	remote.getCurrentWindow().minimize()
+})
+
+maximizeButton.addEventListener("click", function(event){
+	event.preventDefault()
+	remote.getCurrentWindow().maximize()
 })
