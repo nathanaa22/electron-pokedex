@@ -5,7 +5,6 @@ html {
     margin: 0;
   }
   #pokemon-name {
-     padding: 1%;
      text-align: center;
   }
   
@@ -65,26 +64,32 @@ html {
     width: 50%;
   }
   #pokemon-sprite {
-    width: 40%;
-    height: 40%;
-    margin-left: 20%;
-    margin-top: 40%;
+    width: 512px;
+    margin-left: 12%;
+    margin-top: 21%;
+    image-rendering: pixelated;
   }
   #info-half {
     width: 50%;
     display: flex;
     flex-direction: column;
-    
+    margin-top: 15%;
   }
 
   #pokemon-description {
-    width: 50%;
     font-size: 30px;
     font-weight: normal;
+    margin-bottom: 10%;
   }
 
   #pokemon-name {
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 100px;
+    font-weight: lighter;
     text-decoration: underline;
+  }
+
+  #content {
+    display: flex; 
+    flex-direction: row;
+    margin-right: 10%;
   }
